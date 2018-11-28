@@ -12,7 +12,15 @@ var detectNetwork = function(cardNumber) {
   // The Diner's Club network always starts with a 38 or 39 and is 14 digits long
   // The American Express network always starts with a 34 or 37 and is 15 digits long
 
-  // Once you've read this, go ahead and try to implement this function, then return to the console.
+  // Once you've read this, go ahead and try to implement this function, then return to the console
+    var cardNumberSplit = cardNumber.toString().split('');
+    if(cardNumberSplit.length === 14 && cardNumberSplit[0] === '3' &&(cardNumberSplit[1] === '8'  || cardNumberSplit[1] === '9' )) {
+        return "Diner's Club";
+    }
+    else if (cardNumberSplit.length === 15 && cardNumberSplit[0] === '3' &&(cardNumberSplit[1] === '4'  || cardNumberSplit[1] === '7' )){
+        return "American Express";
+    }
+
 };
 
 
