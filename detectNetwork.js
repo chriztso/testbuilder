@@ -13,11 +13,11 @@ var detectNetwork = function(cardNumber) {
   // The American Express network always starts with a 34 or 37 and is 15 digits long
 
   // Once you've read this, go ahead and try to implement this function, then return to the console
-    var cardNumberSplit = cardNumber.toString().split('');
-    if(cardNumberSplit.length === 14 && cardNumberSplit[0] === '3' &&(cardNumberSplit[1] === '8'  || cardNumberSplit[1] === '9' )) {
+    
+    if(cardNumber.length === 14 && cardNumber[0] === '3' &&(cardNumber[1] === '8'  || cardNumber[1] === '9' )) {
         return "Diner's Club";
     }
-    else if (cardNumberSplit.length === 15 && cardNumberSplit[0] === '3' &&(cardNumberSplit[1] === '4'  || cardNumberSplit[1] === '7' )){
+    else if (cardNumber.length === 15 && cardNumber[0] === '3' &&(cardNumber[1] === '4'  || cardNumber[1] === '7' )){
         return "American Express";
     }
 
