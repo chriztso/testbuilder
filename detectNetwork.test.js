@@ -82,8 +82,10 @@ describe('American Express', function() {
   };
 
   it('has a prefix of 34 and a length of 15', function() {
+     var detectNetwork = function(cardNumber){
      if (cardNumber.length === 15 && cardNumber[0] === '3' &&(cardNumber[1] === '4'  || cardNumber[1] === '7' )){
      return "American Express";
+     }
      }
      
      
@@ -91,8 +93,10 @@ describe('American Express', function() {
   });
 
   it('has a prefix of 37 and a length of 15', function() {
+     var detectNetwork = function(cardNumber){
      if (cardNumber.length === 15 && cardNumber[0] === '3' &&(cardNumber[1] === '4'  || cardNumber[1] === '7' )){
      return "American Express";
+     }
      }
 
      
