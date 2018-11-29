@@ -411,7 +411,7 @@ describe('Maestro', function() {
 });
          it('has a prefix of 5018 and a length of 16', function() {
             var detectNetwork = function(cardNumber){
-              if((cardNumber.length >= 12 && cardNumber.length <= 19) && ((cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '8') || (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '2' && cardNumber[3] === '0') || (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '3' && cardNumber[3] === '8') || (cardNumber[0] === '6' && cardNumber[1] === '3' && cardNumber[2] === '0' && cardNumber[3] === '4')))){
+              if((cardNumber.length >= 12 && cardNumber.length <= 19) && ((cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '8') || (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '2' && cardNumber[3] === '0') || (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '3' && cardNumber[3] === '8') || (cardNumber[0] === '6' && cardNumber[1] === '3' && cardNumber[2] === '0' && cardNumber[3] === '4'))){
             return "Maestro";
             }
             }
