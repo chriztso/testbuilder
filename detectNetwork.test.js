@@ -171,7 +171,7 @@ describe('Discover', function() {
   //Discover always has a prefix of 6011, 644-649, or 65, and a length of 16 or 19.
          it('has a prefix of 6011 and a length of 16', function() {
           var detectNetwork = function(cardNumber){
-          if(cardNumber.length === 16 & cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1'){
+          if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5'))){
           return "Discover";
          }
          }
@@ -183,7 +183,7 @@ describe('Discover', function() {
     });
          it('has a prefix of 644 and a length of 16', function() {
             var detectNetwork = function(cardNumber){
-            if(cardNumber.length === 16 & cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'||cardNumber[2] === '5'||cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')){
+            if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5')))  {
             return "Discover";
             }
             }
@@ -195,7 +195,7 @@ describe('Discover', function() {
    });
          it('has a prefix of 645 and a length of 16', function() {
             var detectNetwork = function(cardNumber){
-            if(cardNumber.length === 16 & cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'||cardNumber[2] === '5'||cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')){
+            if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5')))  {
             return "Discover";
             }
             }
@@ -207,7 +207,7 @@ describe('Discover', function() {
     });
          it('has a prefix of 646 and a length of 16', function() {
             var detectNetwork = function(cardNumber){
-            if(cardNumber.length === 16 & cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'||cardNumber[2] === '5'||cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')){
+            if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5')))  {
             return "Discover";
             }
             }
@@ -219,7 +219,7 @@ describe('Discover', function() {
     });
          it('has a prefix of 647 and a length of 16', function() {
             var detectNetwork = function(cardNumber){
-            if(cardNumber.length === 16 & cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'||cardNumber[2] === '5'||cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')){
+            if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5')))  {
             return "Discover";
             }
             }
@@ -231,7 +231,7 @@ describe('Discover', function() {
     });
          it('has a prefix of 648 and a length of 16', function() {
             var detectNetwork = function(cardNumber){
-            if(cardNumber.length === 16 & cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'||cardNumber[2] === '5'||cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')){
+            if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5'))  {
             return "Discover";
             }
             }
@@ -243,7 +243,7 @@ describe('Discover', function() {
     });
          it('has a prefix of 649 and a length of 16', function() {
             var detectNetwork = function(cardNumber){
-            if(cardNumber.length === 16 & cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'||cardNumber[2] === '5'||cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')){
+            if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5')))  {
             return "Discover";
             }
             }
@@ -255,7 +255,7 @@ describe('Discover', function() {
     });
          it('has a prefix of 644 and a length of 19', function() {
             var detectNetwork = function(cardNumber){
-            if(cardNumber.length === 19 & cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'||cardNumber[2] === '5'||cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')){
+            if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5')))  {
             return "Discover";
             }
             }
@@ -267,7 +267,7 @@ describe('Discover', function() {
     });
          it('has a prefix of 645 and a length of 19', function() {
             var detectNetwork = function(cardNumber){
-            if(cardNumber.length === 19 & cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'||cardNumber[2] === '5'||cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')){
+            if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5')))  {
             return "Discover";
             }
             }
@@ -279,7 +279,7 @@ describe('Discover', function() {
     });
          it('has a prefix of 646 and a length of 19', function() {
             var detectNetwork = function(cardNumber){
-            if(cardNumber.length === 19 & cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'||cardNumber[2] === '5'||cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')){
+            if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5')))  {
             return "Discover";
             }
             }
@@ -291,7 +291,7 @@ describe('Discover', function() {
     });
          it('has a prefix of 647 and a length of 19', function() {
             var detectNetwork = function(cardNumber){
-            if(cardNumber.length === 19 & cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'||cardNumber[2] === '5'||cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')){
+            if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5')))  {
             return "Discover";
             }
             }
@@ -303,7 +303,7 @@ describe('Discover', function() {
     });
          it('has a prefix of 648 and a length of 19', function() {
             var detectNetwork = function(cardNumber){
-            if(cardNumber.length === 19 & cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'||cardNumber[2] === '5'||cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')){
+           if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5')))  {
             return "Discover";
             }
             }
@@ -315,7 +315,7 @@ describe('Discover', function() {
     });
          it('has a prefix of 649 and a length of 19', function() {
             var detectNetwork = function(cardNumber){
-            if(cardNumber.length === 19 & cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'||cardNumber[2] === '5'||cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')){
+            if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5')))  {
             return "Discover";
             }
             }
@@ -327,7 +327,7 @@ describe('Discover', function() {
     });
          it('has a prefix of 65 and a length of 16', function() {
             var detectNetwork = function(cardNumber){
-            if(cardNumber.length === 16 & cardNumber[0] === '6' && cardNumber[1] === '5'){
+            if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5')))  {
             return "Discover";
             }
             }
@@ -339,7 +339,7 @@ describe('Discover', function() {
   });
          it('has a prefix of 65 and a length of 19', function() {
             var detectNetwork = function(cardNumber){
-            if(cardNumber.length === 19 & cardNumber[0] === '6' && cardNumber[1] === '5'){
+            if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5')))  {
             return "Discover";
             }
             }
@@ -351,7 +351,7 @@ describe('Discover', function() {
 });
     it('has a prefix of 6011 and a length of 19', function() {
     var detectNetwork = function(cardNumber){
-    if(cardNumber.length === 19 & cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1'){
+    if((cardNumber.length === 16 || cardNumber.length === 19) && ((cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1') || (cardNumber[0] === '6' && cardNumber[1] === '4' && (cardNumber[2] === '4'|| cardNumber[2] === '5' || cardNumber[2] === '6' || cardNumber[2] === '7' || cardNumber[2] === '8' || cardNumber[2] === '9')) ||( cardNumber[0] === '6' && cardNumber[1] === '5')))  {
     return "Discover";
     }
     }
