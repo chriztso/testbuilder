@@ -26,7 +26,7 @@ var detectNetwork = function(cardNumber) {
         return "Visa";
     }
     else if(cardNumber.length === 16 && (cardNumber[0] === '5' &&  (cardNumber[1] === '1' || cardNumber[1] === '2' || cardNumber[1] === '3' || cardNumber[1] === '4' || cardNumber[1] === '5'))) {
-        return "Mastercard";
+        return "MasterCard";
     }
 
 };
