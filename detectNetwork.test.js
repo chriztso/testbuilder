@@ -168,8 +168,29 @@ describe('MasterCard', function() {
 describe('Discover', function() {
   // Tests without a function will be marked as "pending" and not run
   // Implement these tests (and others) and make them pass!
-  it('has a prefix of 6011 and a length of 16');
-  it('has a prefix of 6011 and a length of 19');
+         it('has a prefix of 6011 and a length of 16', function() {
+          var detectNetwork = function(cardNumber){
+          if(cardNumber.length === 16 & cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1'){
+          return "Discover";
+         }
+         }
+       
+       if (detectNetwork('6011231234214444') !== 'Discover') {
+       throw new Error('Test failed');
+       }
+            
+    });
+    it('has a prefix of 6011 and a length of 19', function() {
+    var detectNetwork = function(cardNumber){
+    if(cardNumber.length === 19 & cardNumber[0] === '6' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '1'){
+    return "Discover";
+    }
+    }
+    
+    if (detectNetwork('6011231234214444123') !== 'Discover') {
+    throw new Error('Test failed');
+    }
+});
 });
 
 describe('Maestro', function() {
