@@ -64,8 +64,7 @@ describe('Diner\'s Club', function() {
      }
      }
      
-     
-    if (detectNetwork('3934567890123') !== 'Diner\'s Club') {
+    if (detectNetwork('39345678901234') !== 'Diner\'s Club') {
       throw new Error('Test failed');
     }
  
