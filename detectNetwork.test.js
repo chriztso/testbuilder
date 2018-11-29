@@ -45,7 +45,7 @@ describe('Diner\'s Club', function() {
   // Be careful, tests can have bugs too...
 
   it('has a prefix of 38 and a length of 14', function() {
-     var detectNetwork = function(num){
+     var detectNetwork = function(cardNumber){
      if(cardNumber.length === 14 && cardNumber[0] === '3' &&(cardNumber[1] === '8'  || cardNumber[1] === '9' )) {
      return "Diner's Club";
      }
