@@ -194,8 +194,364 @@ describe('Discover', function() {
 });
 
 describe('Maestro', function() {
+  // Maestro always has a prefix of 5018, 5020, 5038, or 6304, and a length of 12-19.
   // Write full test coverage for the Maestro card
+         it('has a prefix of 5018 and a length of 12', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('501890909090') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
 });
-
+         it('has a prefix of 5018 and a length of 13', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('5018909090901') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5018 and a length of 14', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('50189090909011') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5018 and a length of 15', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('501890909090111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5018 and a length of 16', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('5018909090901111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5018 and a length of 17', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('50189090909011111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5018 and a length of 18', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('501890909090111111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5018 and a length of 19', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '1' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('5018909090901111111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         
+         it('has a prefix of 5020 and a length of 12', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '2' && cardNumber[3] === '0')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('502090909090') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5020 and a length of 13', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '2' && cardNumber[3] === '0')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('5020909090901') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5020 and a length of 14', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '2' && cardNumber[3] === '0')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('50209090909011') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5020 and a length of 15', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '2' && cardNumber[3] === '0')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('502090909090111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5020 and a length of 16', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '2' && cardNumber[3] === '0')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('5020909090901111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5020 and a length of 17', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '2' && cardNumber[3] === '0')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('50209090909011111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5020 and a length of 18', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '2' && cardNumber[3] === '0')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('502090909090111111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5020 and a length of 19', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '2' && cardNumber[3] === '0')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('5020909090901111111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         
+         
+         it('has a prefix of 5038 and a length of 12', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '3' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('503890909090') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         
+         it('has a prefix of 5038 and a length of 13', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '3' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('5038909090901') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5038 and a length of 14', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '3' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('50389090909011') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5038 and a length of 15', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '3' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('503890909090111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5038 and a length of 16', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '3' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('5038909090901111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5038 and a length of 17', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '3' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('50389090909011111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5038 and a length of 18', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '3' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('503890909090111111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 5038 and a length of 19', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '5' && cardNumber[1] === '0' && cardNumber[2] === '3' && cardNumber[3] === '8')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('5038909090901111111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 6304 and a length of 12', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '6' && cardNumber[1] === '3' && cardNumber[2] === '0' && cardNumber[3] === '4')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('630490909090') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 6304 and a length of 13', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '6' && cardNumber[1] === '3' && cardNumber[2] === '0' && cardNumber[3] === '4')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('6304909090901') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 6304 and a length of 14', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '6' && cardNumber[1] === '3' && cardNumber[2] === '0' && cardNumber[3] === '4')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('63049090909011') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 6304 and a length of 15', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '6' && cardNumber[1] === '3' && cardNumber[2] === '0' && cardNumber[3] === '4')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('630490909090111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 6304 and a length of 16', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '6' && cardNumber[1] === '3' && cardNumber[2] === '0' && cardNumber[3] === '4')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('6304909090901111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 6304 and a length of 17', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '6' && cardNumber[1] === '3' && cardNumber[2] === '0' && cardNumber[3] === '4')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('63049090909011111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 6304 and a length of 18', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '6' && cardNumber[1] === '3' && cardNumber[2] === '0' && cardNumber[3] === '4')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('630490909090111111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+         it('has a prefix of 6304 and a length of 19', function() {
+            var detectNetwork = function(cardNumber){
+            if((cardNumber.length >= 12 && cardNumber.length <= 19) && (cardNumber[0] === '6' && cardNumber[1] === '3' && cardNumber[2] === '0' && cardNumber[3] === '4')){
+            return "Maestro";
+            }
+            }
+            
+            if (detectNetwork('6304909090901111111') !== 'Maestro') {
+            throw new Error('Test failed');
+            }
+});
+});
 describe('should support China UnionPay')
 describe('should support Switch')
