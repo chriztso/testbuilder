@@ -82,10 +82,21 @@ describe('American Express', function() {
   };
 
   it('has a prefix of 34 and a length of 15', function() {
+     if (cardNumber.length === 15 && cardNumber[0] === '3' &&(cardNumber[1] === '4'  || cardNumber[1] === '7' )){
+     return "American Express";
+     }
+     }
+     
     assert(detectNetwork('343456789012345') === 'American Express');
   });
 
   it('has a prefix of 37 and a length of 15', function() {
+     if (cardNumber.length === 15 && cardNumber[0] === '3' &&(cardNumber[1] === '4'  || cardNumber[1] === '7' )){
+     return "American Express";
+     }
+     }
+     
+     
     assert(detectNetwork('373456789012345') === 'American Express');
   });
 });
